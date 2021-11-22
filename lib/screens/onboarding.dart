@@ -32,56 +32,24 @@ class Onboarding extends StatelessWidget {
                             child: Column(
                       children: [
                         Container(
-                            width: MediaQuery.of(context).size.width / 3,
+                            width: MediaQuery.of(context).size.width / 2,
                             child: FittedBox(
                                 fit: BoxFit.contain,
-                                child: Text("Now UI",
+                                child: Text("Modarc Soft",
                                     style: TextStyle(
                                         color: NowUIColors.white,
                                         fontWeight: FontWeight.w600)))),
                         Container(
-                            width: MediaQuery.of(context).size.width / 3,
+                            width: MediaQuery.of(context).size.width / 2,
                             child: FittedBox(
                               fit: BoxFit.contain,
-                              child: Text("Flutter",
+                              child: Text("Web Otomasyon Hizmetleri",
                                   style: TextStyle(
                                       color: NowUIColors.white,
                                       fontWeight: FontWeight.w600)),
                             ))
                       ],
                     ))),
-                  ],
-                ),
-                Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text("Designed By",
-                            style: TextStyle(
-                                color: NowUIColors.white,
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: 0.3)),
-                        SizedBox(width: 5.0),
-                        Image.asset("assets/imgs/invision-white-slim.png",
-                            scale: 7.0)
-                      ],
-                    ),
-                    SizedBox(height: 8.0),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text("Coded By",
-                            style: TextStyle(
-                                color: NowUIColors.white,
-                                fontWeight: FontWeight.w600,
-                                letterSpacing: 0.3)),
-                        SizedBox(width: 10.0),
-                        Image.asset("assets/imgs/creative-tim.png", scale: 7.0),
-                      ],
-                    ),
                   ],
                 ),
                 Padding(
@@ -100,8 +68,8 @@ class Onboarding extends StatelessWidget {
                       child: Padding(
                           padding: EdgeInsets.only(
                               left: 16.0, right: 16.0, top: 16, bottom: 16),
-                          child: Text("GET STARTED",
-                              style: TextStyle(fontSize: 12.0))),
+                          child:
+                              Text("BAŞLA", style: TextStyle(fontSize: 14.0))),
                     ),
                   ),
                 )

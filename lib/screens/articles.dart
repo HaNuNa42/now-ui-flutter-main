@@ -119,7 +119,7 @@ class Articles extends StatelessWidget {
                         title: articlesCards["Ice Cream"]['title'],
                         img: articlesCards["Ice Cream"]['image'],
                         tap: () {
-                          Navigator.pushNamed(context, '/pro');
+                          Navigator.pushNamed(context, '/home');
                         }),
                   ),
                   SizedBox(height: 8.0),
@@ -130,14 +130,14 @@ class Articles extends StatelessWidget {
                           title: articlesCards["Makeup"]['title'],
                           img: articlesCards["Makeup"]['image'],
                           tap: () {
-                            Navigator.pushNamed(context, '/pro');
+                            Navigator.pushNamed(context, '/home');
                           }),
                       CardSmall(
                           cta: "View article",
                           title: articlesCards["Coffee"]['title'],
                           img: articlesCards["Coffee"]['image'],
                           tap: () {
-                            Navigator.pushNamed(context, '/pro');
+                            Navigator.pushNamed(context, '/home');
                           })
                     ],
                   ),
@@ -147,7 +147,7 @@ class Articles extends StatelessWidget {
                       title: articlesCards["Fashion"]['title'],
                       img: articlesCards["Fashion"]['image'],
                       tap: () {
-                        Navigator.pushNamed(context, '/pro');
+                        Navigator.pushNamed(context, '/home');
                       }),
                   SizedBox(height: 8.0),
                   CardSquare(
@@ -155,11 +155,11 @@ class Articles extends StatelessWidget {
                       title: articlesCards["Argon"]['title'],
                       img: articlesCards["Argon"]['image'],
                       tap: () {
-                        Navigator.pushNamed(context, '/pro');
+                        Navigator.pushNamed(context, '/home');
                       }),
                   CardCategory(
                       tap: () {
-                        Navigator.pushNamed(context, '/pro');
+                        Navigator.pushNamed(context, '/home');
                       },
                       title: articlesCards["Music"]["title"],
                       img: articlesCards["Music"]["image"]),

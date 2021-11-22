@@ -45,14 +45,14 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: Navbar(
-          title: "Home",
+          title: "Ana Sayfa",
           searchBar: true,
-          categoryOne: "Trending",
-          categoryTwo: "Fashion",
+          categoryOne: "Blog",
+          categoryTwo: "Hizmetlerimiz",
         ),
         backgroundColor: NowUIColors.bgColorScreen,
         // key: _scaffoldKey,
-        drawer: NowDrawer(currentPage: "Home"),
+        drawer: NowDrawer(currentPage: "Ana Sayfa"),
         body: Container(
           padding: EdgeInsets.only(left: 16.0, right: 16.0),
           child: SingleChildScrollView(
@@ -61,11 +61,11 @@ class Home extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 16.0),
                   child: CardHorizontal(
-                      cta: "View article",
+                      cta: "Devamını Oku",
                       title: homeCards["Ice Cream"]['title'],
                       img: homeCards["Ice Cream"]['image'],
                       tap: () {
-                        Navigator.pushNamed(context, '/pro');
+                        Navigator.pushNamed(context, '/home');
                       }),
                 ),
                 SizedBox(height: 8.0),
@@ -73,36 +73,36 @@ class Home extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     CardSmall(
-                        cta: "View article",
+                        cta: "Devamını Oku",
                         title: homeCards["Makeup"]['title'],
                         img: homeCards["Makeup"]['image'],
                         tap: () {}),
                     CardSmall(
-                        cta: "View article",
+                        cta: "Devamını Oku",
                         title: homeCards["Coffee"]['title'],
                         img: homeCards["Coffee"]['image'],
                         tap: () {
-                          Navigator.pushNamed(context, '/pro');
+                          Navigator.pushNamed(context, '/home');
                         })
                   ],
                 ),
                 SizedBox(height: 8.0),
                 CardHorizontal(
-                    cta: "View article",
+                    cta: "Devamını Oku",
                     title: homeCards["Fashion"]['title'],
                     img: homeCards["Fashion"]['image'],
                     tap: () {
-                      Navigator.pushNamed(context, '/pro');
+                      Navigator.pushNamed(context, '/home');
                     }),
                 SizedBox(height: 8.0),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 32.0),
                   child: CardSquare(
-                      cta: "View article",
+                      cta: "Devamını Oku",
                       title: homeCards["Argon"]['title'],
                       img: homeCards["Argon"]['image'],
                       tap: () {
-                        Navigator.pushNamed(context, '/pro');
+                        Navigator.pushNamed(context, '/home');
                       }),
                 )
               ],

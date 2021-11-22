@@ -61,12 +61,12 @@ class NowDrawer extends StatelessWidget {
               DrawerTile(
                   icon: FontAwesomeIcons.home,
                   onTap: () {
-                    if (currentPage != "Home")
+                    if (currentPage != "Ana Sayfa")
                       Navigator.pushReplacementNamed(context, '/home');
                   },
                   iconColor: NowUIColors.primary,
-                  title: "Home",
-                  isSelected: currentPage == "Home" ? true : false),
+                  title: "Ana Sayfa",
+                  isSelected: currentPage == "Ana Sayfa" ? true : false),
               DrawerTile(
                   icon: FontAwesomeIcons.dharmachakra,
                   onTap: () {

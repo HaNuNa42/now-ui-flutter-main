@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 // screens
 import 'package:now_ui_flutter/screens/onboarding.dart';
-import 'package:now_ui_flutter/screens/pro.dart';
 import 'package:now_ui_flutter/screens/home.dart';
 import 'package:now_ui_flutter/screens/profile.dart';
 import 'package:now_ui_flutter/screens/settings.dart';
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Now UI PRO Flutter',
+        title: 'Modarc Soft Blog',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(fontFamily: 'Montserrat'),
         initialRoute: '/onboarding',
@@ -24,7 +23,6 @@ class MyApp extends StatelessWidget {
           '/home': (BuildContext context) => new Home(),
           '/settings': (BuildContext context) => new Settings(),
           "/onboarding": (BuildContext context) => new Onboarding(),
-          "/pro": (BuildContext context) => new Pro(),
           "/profile": (BuildContext context) => new Profile(),
           "/articles": (BuildContext context) => new Articles(),
           "/components": (BuildContext context) => new Components(),

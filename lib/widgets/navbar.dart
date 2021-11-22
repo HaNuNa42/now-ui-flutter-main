@@ -29,7 +29,7 @@ class Navbar extends StatefulWidget implements PreferredSizeWidget {
   final Color bgColor;
 
   Navbar(
-      {this.title = "Home",
+      {this.title = "Ana Sayfa",
       this.categoryOne = "",
       this.categoryTwo = "",
       this.tags,
@@ -83,7 +83,8 @@ class _NavbarState extends State<Navbar> {
                 ? (tagsExist ? 162.0 : 102.0)
                 : (tagsExist ? 200.0 : 150.0)),
         decoration: BoxDecoration(
-            color: !widget.transparent ? widget.bgColor : Colors.transparent,
+            color: Colors.blue
+                .shade200, // !widget.transparent ? widget.bgColor : Colors.transparent,
             boxShadow: [
               BoxShadow(
                   color: !widget.transparent && !widget.noShadow
