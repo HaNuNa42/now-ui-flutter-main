@@ -41,7 +41,7 @@ class _SettingsState extends State<Settings> {
                 Center(
                   child: Padding(
                     padding: const EdgeInsets.only(top: 8.0),
-                    child: Text("Recommended Settings",
+                    child: Text("Önerilen Ayarlar",
                         style: TextStyle(
                             color: NowUIColors.text,
                             fontWeight: FontWeight.w600,

@@ -91,11 +91,11 @@ class Articles extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: Navbar(
-          title: "Articles",
+          title: "Blog",
           rightOptions: false,
         ),
         backgroundColor: NowUIColors.bgColorScreen,
-        drawer: NowDrawer(currentPage: "Articles"),
+        drawer: NowDrawer(currentPage: "Blog"),
         body: Container(
             padding: EdgeInsets.only(right: 24, left: 24, bottom: 36),
             child: SingleChildScrollView(

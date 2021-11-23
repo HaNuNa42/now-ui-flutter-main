@@ -25,7 +25,7 @@ class Onboarding extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Image.asset("assets/imgs/now-logo.png", scale: 3.5),
+                    Image.asset("assets/imgs/2.png", scale: 3.5),
                     SizedBox(height: 20),
                     Container(
                         child: Center(

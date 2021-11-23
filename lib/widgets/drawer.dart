@@ -38,7 +38,7 @@ class NowDrawer extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.baseline,
                   textBaseline: TextBaseline.alphabetic,
                   children: [
-                    Image.asset("assets/imgs/now-logo.png"),
+                    Image.asset("assets/imgs/2.png"),
                     Padding(
                       padding: const EdgeInsets.only(top: 10.0),
                       child: IconButton(
@@ -79,12 +79,12 @@ class NowDrawer extends StatelessWidget {
               DrawerTile(
                   icon: FontAwesomeIcons.newspaper,
                   onTap: () {
-                    if (currentPage != "Articles")
+                    if (currentPage != "Blog")
                       Navigator.pushReplacementNamed(context, '/articles');
                   },
                   iconColor: NowUIColors.primary,
-                  title: "Articles",
-                  isSelected: currentPage == "Articles" ? true : false),
+                  title: "Blog",
+                  isSelected: currentPage == "Blog" ? true : false),
               DrawerTile(
                   icon: FontAwesomeIcons.user,
                   onTap: () {
@@ -137,10 +137,10 @@ class NowDrawer extends StatelessWidget {
                         )),
                   ),
                   DrawerTile(
-                      icon: FontAwesomeIcons.satellite,
+                      icon: FontAwesomeIcons.adn,
                       onTap: _launchURL,
                       iconColor: NowUIColors.muted,
-                      title: "Getting Started",
+                      title: "Uygulama Hakkında",
                       isSelected:
                           currentPage == "Getting started" ? true : false),
                 ],
